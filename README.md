@@ -5,9 +5,10 @@ A documentation on how to use sphinx
 To just view the doc 
 1) Download Build folder
 2) Open html/result.html
+3) or download from https://drive.google.com/drive/folders/1t3_jc8CJ9CW5-FmJxGnpAmAa0gu2xbIh?usp=sharing
 
 ## Build Sphinx
-Download pckg1 folder and keep it  inside the sphinx folder
+Download only pckg1 folder and keep it  inside the sphinx folder
 Installing Sphinx 
 
 1)Create a virtual env
