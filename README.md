@@ -32,7 +32,8 @@ automatically insert doc strings to true,
 set todo to true,
 makefile to true,
 view code to true,
-4)Add these lines to conf.py,
+
+4)Add these lines to conf.py
 ```
 import sys
 import os 
