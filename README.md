@@ -9,6 +9,7 @@ To just view the doc
 
 ## Build Sphinx
 Download only pckg1 folder and keep it  inside the sphinx folder
+
 Installing Sphinx 
 
 1)Create a virtual env
