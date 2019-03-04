@@ -27,12 +27,12 @@ pip install sphinx_rtd_theme
 ```
 sphinx-quickstart
 ```
-set autodoc to true
-automatically insert doc strings to true
-set todo to true
-makefile to true
-view code to true
-4)Add these lines to conf.py
+set autodoc to true,
+automatically insert doc strings to true,
+set todo to true,
+makefile to true,
+view code to true,
+4)Add these lines to conf.py,
 ```
 import sys
 import os 
