@@ -7,12 +7,15 @@ To just view the doc
 2) Open html/result.html
 
 ## Build Sphinx
-Download pckg1 folder and keep it just outside the sphinx folder
+Download pckg1 folder and keep it  inside the sphinx folder
 Installing Sphinx 
+
 1)Create a virtual env
 ```
-virtualenv -p python3 <name of virtualenv>
+mdir sphinx
+virtualenv sphinx
 source <name of virtualenv>/bin/activate
+cd sphinx
 ```
 2)Install dependecies
 ```
@@ -26,12 +29,14 @@ sphinx-quickstart
 ```
 set autodoc to true
 automatically insert doc strings to true
+set todo to true
 makefile to true
 view code to true
 4)Add these lines to conf.py
 ```
-import os
-import os sys.path.insert(0, os.path.join(os.path.abspath('../..'), 'pckg1'))
+import sys
+import os 
+sys.path.insert(0, os.path.join(os.path.abspath('..'),'pckg1'))
 html_theme = "sphinx_rtd_theme"
 ```
 5)Add result to index.rst
@@ -43,14 +48,15 @@ Welcome to Rishi's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   modules
    result
+```
+6)run the apido command to create .rst files
+```
+ sphinx-apidoc pckg1 -o source
 ```
 6) Build your documentation by changing directory to the directory that contains the Makefile and then running 
 ```
 make html
 ```
-6)You can view the documentation by running Python’s built-in web server, opening http:/ /localhost:8000/ in your web browser, and navigating into the _build/html directory
- ```
- python -m SimpleHTTPServer
- ```
+7)You can view the documentation by navigating into the _build/html directory
+
