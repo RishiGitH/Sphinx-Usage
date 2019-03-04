@@ -54,9 +54,9 @@ Welcome to Rishi's documentation!
 ```
  sphinx-apidoc pckg1 -o source
 ```
-6) Build your documentation by changing directory to the directory that contains the Makefile and then running 
+7) Build your documentation by changing directory to the directory that contains the Makefile and then running 
 ```
 make html
 ```
-7)You can view the documentation by navigating into the _build/html directory
+8)You can view the documentation by navigating into the _build/html directory
 
